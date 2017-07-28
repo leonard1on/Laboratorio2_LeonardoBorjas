@@ -13,22 +13,22 @@ int main(){
 		resp=menu();
 		switch(resp){
 			case 1:{
-					   float distancia=ejercicio1();
-					   cout<<"La distancia entre los puntos es:" <<distancia <<endl <<endl;
+					float distancia=ejercicio1();
+					cout<<"La distancia entre los puntos es:" <<distancia <<endl <<endl;
 				   }
 					break;
 			case 2:{
-						double angulo;
-						cout<<"Ingrese un angulo para sacar la serie de coseno y seno:";
-						cin >>angulo;
-						angulo=(3.141592*angulo)/180;
-						cout <<"El coseno es " <<ejercicio2cos(angulo) <<endl;
-						cout <<"El seno es " <<ejercicio2sen(angulo) <<endl;
+					double angulo;
+					cout<<"Ingrese un angulo para sacar la serie de coseno y seno:";
+					cin >>angulo;
+					angulo=(3.141592*angulo)/180;
+					cout <<"El coseno es " <<ejercicio2cos(angulo) <<endl;
+					cout <<"El seno es " <<ejercicio2sen(angulo) <<endl;
 				   
 				   }
 					break;
 			case 3:{
-
+					ejercicio3();
 				   }
 					break;
 		}
@@ -99,7 +99,7 @@ double ejercicio2cos(double angulo){
 	return cossuma;
 }
 
-void ejercicios3(){
+void ejercicio3(){
 	float a,b,c,A,B,C;
 	cout <<"Ingrese el lado a de el triangulo:";
 	cin >>a;
@@ -107,10 +107,10 @@ void ejercicios3(){
 	cin >>b;
 	cout <<"Ingrese el angulo A del triangulo:";
 	cin >>A;
-	float ARadian=(3.141592*A)/180;
-	float CRadian=(3.141592*C)/180;
-	B=asin((b*ejercicio2sen(ARadian))/a);
+	float ARadian=(3.141592*A)/180;	
+	B=asin((b*(ejercicio2sen(ARadian))/a));
 	C=180-A-B;
+	float CRadian=(3.141592*C)/180;
 	c=ejercicio2sen(CRadian)*(a/(ejercicio2sen(A)));
 
 	cout <<"A" <<A <<"...B" <<B <<"...C" <<C;
