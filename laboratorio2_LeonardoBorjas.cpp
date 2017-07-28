@@ -100,7 +100,7 @@ double ejercicio2cos(double angulo){
 }
 
 void ejercicios3(){
-	float a,b,A;
+	float a,b,c,A,B,C;
 	cout <<"Ingrese el lado a de el triangulo:";
 	cin >>a;
 	cout <<"Ingrese el lado b de el triangulo:";
@@ -109,7 +109,9 @@ void ejercicios3(){
 	cin >>A;
 	float ARadian=(3.141592*a)/180;
 	float todoa=a/(ejercicio2sen(ARadian));
-	
+	B=asin((b*ejercicio2sen(ARadian))/a);
+	C=180-A-B;
+
 }
 
 int factorial(int limite){
