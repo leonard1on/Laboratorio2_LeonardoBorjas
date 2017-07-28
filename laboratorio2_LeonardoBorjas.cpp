@@ -123,8 +123,8 @@ void ejercicio3(){
 	float hc=(2/c)*area;
 
 	cout <<"A" <<A <<"...B" <<B <<"...C" <<C;
-
-
+	cout <<"a" <<a <<"...b" <<B <<"...c" <<C;
+	cout <<"ha" <<A <<"...hb" <<B <<"...hc" <<C;
 
 	
 }
