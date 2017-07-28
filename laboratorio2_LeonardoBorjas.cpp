@@ -115,8 +115,17 @@ void ejercicio3(){
 	C=180-A-B;
 	float CRadian=(3.141592*C)/180;
 	c=ejercicio2sen(CRadian)*(a/(ejercicio2sen(A)));
+	
+	float s=(a+b+c)/2;
+	float area=sqrt(s*(s-a)*(s-b)*(s-c));
+	float ha=(2/a)*area;
+	float hb=(2/b)*area;
+	float hc=(2/c)*area;
 
 	cout <<"A" <<A <<"...B" <<B <<"...C" <<C;
+
+
+
 	
 }
 
