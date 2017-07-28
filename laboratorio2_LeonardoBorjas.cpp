@@ -5,6 +5,7 @@ int menu();
 float ejercicio1();
 double ejercicio2sen(double);
 double ejercicio2cos(double);
+void ejercicio3();
 int factorial(int);
 int main(){
 	int resp=0;
@@ -98,6 +99,18 @@ double ejercicio2cos(double angulo){
 	return cossuma;
 }
 
+void ejercicios3(){
+	float a,b,A;
+	cout <<"Ingrese el lado a de el triangulo:";
+	cin >>a;
+	cout <<"Ingrese el lado b de el triangulo:";
+	cin >>b;
+	cout <<"Ingrese el angulo A del triangulo:";
+	cin >>A;
+	float ARadian=(3.141592*a)/180;
+	float todoa=a/(ejercicio2sen(ARadian));
+	
+}
 
 int factorial(int limite){
 	long resp=1;
