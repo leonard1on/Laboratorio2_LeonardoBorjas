@@ -3,6 +3,7 @@
 using namespace std;
 int menu();
 float ejercicio1();
+float ejercicio2();
 int factorial(int);
 int main(){
 	int resp=0;
@@ -63,18 +64,43 @@ float ejercicio1(){
 	distancia= sqrt(exp1+exp2);
 	return distancia;
 }
-float ejercicio2(){
+float ejercicio2sen(){
 	float angulo;
+	float cossuma;
 	cout<<"Ingrese un angulo para sacar la serie de coseno y seno:";
 	cin >>angulo;
 	angulo=(3.141592*angulo)/180;
 
 	for(int n=0;n<12;n++){
-	int factorialsin=factorial(2*n+1);
-	int factorialcos=factorial(2*n);
-	float parte;
+		int factorialsin=factorial(2*n+1);
+		float parte1sin= (pow (-1,n))/(factorialsin);
+		float parte2sin= pow (angulo,2*n+1);
+		float seno=parte1sin*parte2sin;
 	}
+	
+
+
 }
+
+float ejercicio2cos(){
+	float angulo;
+	float cossuma;
+	cout<<"Ingrese un angulo para sacar la serie de coseno y seno:";
+	cin >>angulo;
+	angulo=(3.141592*angulo)/180;
+
+	for(int n=0;n<12;n++){
+		int factorialcos=factorial(2*n);
+		float parte1cos= (pow (-1,n))/(factorialcos);
+		float parte2cos= pow (angulo,2*n);
+		float cos=parte1cos*parte2cos;
+		
+	}
+	
+
+
+}
+
 
 int factorial(int limite){
 	int resp=1;
