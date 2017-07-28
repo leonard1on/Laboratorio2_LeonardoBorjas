@@ -107,13 +107,17 @@ void ejercicio3(){
 	cin >>b;
 	cout <<"Ingrese el angulo A del triangulo:";
 	cin >>A;
-	float ARadian=(3.141592*A)/180;	
-	B=asin((b*(ejercicio2sen(ARadian))/a));
+	float ARadian=(3.141592*A)/180;
+	float senA=ejercicio2sen(ARadian);
+	B=asin((b*senA)/a) *180/3.141592;
+	
+	
 	C=180-A-B;
 	float CRadian=(3.141592*C)/180;
 	c=ejercicio2sen(CRadian)*(a/(ejercicio2sen(A)));
 
 	cout <<"A" <<A <<"...B" <<B <<"...C" <<C;
+	
 }
 
 int factorial(int limite){
